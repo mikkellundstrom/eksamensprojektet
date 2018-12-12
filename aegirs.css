@@ -1,0 +1,427 @@
+/* BASICS START */
+
+body {
+	margin: 0;
+	font-family: 'helvetica', 'arial', 'sans-serif';
+}
+
+main {
+    
+}
+
+h1 {
+  color: white;
+font-size: 2.5em;
+line-height: 0em;
+    
+}
+
+h2 {
+font-size: 1.5em;
+line-height: 1.5em;
+
+}
+
+a {
+    color: #12A5D7;
+    text-decoration: none;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: black;
+    line-height: 1.3em;
+}
+
+/* HEADER START */
+
+.header {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding-top: 1%;
+  padding-bottom: 1%; 
+}
+
+.header img {
+    max-width: 250px;
+    
+}
+
+.header a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    
+}
+.header a:hover {
+    color: #12A5D7;    
+        
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .knap:hover {
+  background-color: #000;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 1.7em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover .logo {
+    color: #fff;
+    
+}
+
+ /* HEADER MEDIA QUERIES */
+
+@media only screen and (max-width: 850px) {
+   .header img {
+    max-width: 170px;
+  }
+}
+
+        /* MENU START */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+        /* MENU IKON START */
+
+.header .nav-ikon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .nav-ikon .ikon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .nav-ikon .ikon:before,
+.header .nav-ikon .ikon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .nav-ikon .ikon:before {
+  top: 5px;
+}
+
+.header .nav-ikon .ikon:after {
+  top: -5px;
+}
+
+        /* MENU KNAP START */
+
+.header .knap {
+  display: none;
+}
+
+.header .knap:checked ~ .menu {
+  max-height: 340px;
+}
+
+.header .knap:checked ~ .nav-ikon .ikon {
+  background: transparent;
+}
+
+.header .knap:checked ~ .nav-ikon .ikon:before {
+  transform: rotate(-45deg);
+}
+
+.header .knap:checked ~ .nav-ikon .ikon:after {
+  transform: rotate(45deg);
+}
+
+.header .knap:checked ~ .nav-ikon:not(.steps) .ikon:before,
+.header .knap:checked ~ .nav-ikon:not(.steps) .ikon:after {
+  top: 0;
+}
+
+/* HEADER MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .nav-ikon {
+    display: none;
+  }
+}
+
+/* HEADER SLUT */
+
+/* TOPBILLEDE START */
+
+#topbillede {
+    background-image: url(aegirs-top.png);
+    display: grid;
+    background-position: center;
+    grid-template-columns: 1fr;
+    min-height: 518px;
+    background-size: cover;
+    align-items: center;
+} 
+
+#overskrift {
+    text-align: center;
+    
+}
+
+#sliderp {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.0em;
+    font-weight: bold;
+    
+}
+
+/* TOP BILLEDE MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1000px) {
+  #topbillede {
+    background-image: url(aegirs-top.png);
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+    min-height: 518px;
+  }
+}
+
+
+/* BLOGINDLAEG - SECTION */
+
+#grid {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    padding-bottom: 4%;
+    padding-right: 6%;
+    padding-left: 6%; 
+    padding-top: 4%;
+    grid-gap: 5%;
+}
+
+.grid-article {
+    text-align: left;
+    
+}
+
+.grid-article-1 {
+    background-color: #f5f5f5;
+    text-align: left;
+    padding: 2%;
+    
+}
+
+#knap-blog {
+  width: 100%;
+  padding: 1%;
+line-height: 1.9em;
+  font-size: 1.1em;
+  color: white;
+  text-align: center;
+  background: #1a9fd6;
+}
+#knap-blog:hover {
+  background-color: #0788be;
+}
+
+/* BLOGINDLAEG MEDIA QUERIES */
+
+@media only screen and (max-width: 800px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 6%;
+    padding-right: 6%;
+    grid-gap: 2%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 4%;
+    grid-gap: 2%;
+  }
+}
+
+/* FOOTER START */
+
+footer {
+    background-color: #212223
+    
+}
+
+footer a:hover {
+    color: #12A5D7;
+    
+}
+
+h5 {
+  font-size: 1.5em;     
+}
+
+#footergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: start;
+}
+
+.footeroverskrift {
+    font-size: 1.5em;
+    line-height: 0.5;
+    padding-bottom: 4%;
+    color: white;
+    
+}
+
+#footerlogo {
+    max-width: 100%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    line-height: 0.5;
+}
+
+.grid-item {
+    display: grid;
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.2;
+} 
+
+.grid-item a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.grid-item p {
+    color: white;
+    
+}
+
+.social {
+    padding-right: 10px;
+}
+
+/* FOOTER MEDIA QUERIES */
+
+
+@media only screen and (max-width: 1100px) {
+  #footergrid {
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-gap: 2%;
+  }
+
+    .footeroverskrift {
+        line-height: 1.3em;
+    }
+    
+    #footerlogo {
+        justify-items: center;
+        padding-top: 13%;
+        
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  #footergrid {
+    padding-left: 10%;
+    padding-right: 10%;
+    grid-gap: 2%;
+  }
+
+    .footeroverskrift {
+        line-height: 1.3em;
+    }
+    
+    #footerlogo {
+        justify-items: center;
+        padding-top: 15%;
+        
+    }
+
+@media only screen and (max-width: 600px) {
+  #footergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;  
+    grid-gap: 2%;
+    justify-content: center;
+  }
+    
+    .grid-item {
+        text-align: center;
+        
+    }
+    
+    #footerlogo {
+        justify-content: center;
+        padding-top: 13%;
+        
+    }
+}
+
