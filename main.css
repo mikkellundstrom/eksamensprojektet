@@ -27,6 +27,7 @@ img {
 
 p {
     color: black;
+    line-height: 1.4em;
 }
    a {
     color: #12A5D7;
@@ -226,7 +227,7 @@ ul li {
     background-size: cover;
     min-height: 725px;
     align-items: center;
-    padding-left: 6%;
+    padding-left: 7.5%;
 } 
 
 #overskrift {
@@ -237,7 +238,7 @@ ul li {
     color: white;
     font-size: 1.4em;
     line-height: 1.4em;
-    font-weight: bold;
+    font-weight: normal;
     
 }
 
@@ -315,8 +316,8 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center; 
     padding-bottom: 8%;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 8%;
+    padding-right: 8%;
     grid-gap: 5%;
 }
 
@@ -369,8 +370,8 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center; 
     padding-bottom: 8%;
-    padding-right: 6%;
-    padding-left: 6%; 
+    padding-right: 8%;
+    padding-left: 8%; 
     grid-gap: 10%;
 }
 
@@ -419,8 +420,8 @@ ul li {
     grid-template-columns: 1fr 1fr;
     justify-items: center; 
     margin-bottom: 8%;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 8%;
+    padding-right: 8%;
     grid-gap: 5%;
 }
 
@@ -483,8 +484,8 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center; 
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-right: 8%;
+    padding-left: 8%;
     padding-bottom: 2%;
     grid-gap: 5%;
 }
@@ -516,6 +517,14 @@ bloginlaeg a:hover {
     font-weight: bold;
     text-align: left;   
     
+}
+
+.underoverskrift a {
+    color: #000; 
+}
+
+.underoverskrift a:hover {
+    color: #12A5D7;
 }
 
 #knap-blog {
@@ -623,6 +632,8 @@ h5 {
 
 .social {
     padding-right: 10px;
+    height: 36px;
+    width: 36px;
 }
 
 .grid-item p {

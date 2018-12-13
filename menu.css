@@ -350,6 +350,10 @@ ul li {
     
 }
 
+.sidebar a:hover {
+    color: #12A5D7;
+}
+
 
 /* BLOGINDLAEG MEDIA QUERIES */
 
