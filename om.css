@@ -205,8 +205,8 @@ ul li {
     .menu {
      position: fixed;
     width: 100%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     }
     
     #logo {
@@ -373,7 +373,7 @@ ul li {
 
 #sectionoverskrift-udtalelse {
     text-align: left;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-left: 8%;
     padding-right: 8%;
     
@@ -401,7 +401,7 @@ ul li {
     padding-right: 5%;
 }
 
-#udtalelse {
+.udtalelse {
     padding-top: 4%;
     
 }
