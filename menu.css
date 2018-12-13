@@ -46,6 +46,7 @@ p {
     padding-bottom: 2%;
     padding-right: 2%;
     padding-left: 0%;
+    color: #fff
 }
 
 .logo {
@@ -118,8 +119,8 @@ nav {
     
 }
 
-.menupunkter a {
-    color: white;
+.menu a {
+    color: #fff;
     font-size: 1.1em;
     display: block;
     font-weight: normal;
@@ -204,12 +205,6 @@ ul li {
 }
     
 @media only screen and (max-width: 750px) {
-    .menu {
-     position: fixed;
-    width: 100%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    }
     
     #logo {
         max-width: 200px;
@@ -217,10 +212,11 @@ ul li {
     .logo{
         max-width: 88%;
     }
+    .menu {
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
 }
-
-
-
 
 /* TOPBILLEDE START */
 

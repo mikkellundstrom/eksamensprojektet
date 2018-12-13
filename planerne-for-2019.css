@@ -317,10 +317,10 @@ ul li {
 #grid {
     background-color: #fff;
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 2fr 1fr; 
     padding-bottom: 0%;;
-    padding-right: 17%;
-    padding-left: 17%; 
+    padding-right: 8%;
+    padding-left: 8%; 
     padding-top: 3%;
     justify-items: center;
 }
@@ -328,6 +328,28 @@ ul li {
 .grid-article {
     text-align: left;
     
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    background-color: #f5f5f5;
+    padding: 10%;
+    width: 100%;
+}
+
+#sidebar-overskrift {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.sidebar a {
+    color: #000;
+    
+}
+
+.sidebar a:hover {
+    color: #12A5D7;
 }
 
 /* BLOGINDLAEG MEDIA QUERIES */
@@ -340,6 +362,9 @@ ul li {
     padding-right: 10%;
     grid-gap: 2%;
   }
+    .sidebar {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -356,12 +381,12 @@ ul li {
 
 .grid-udtalelser {
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 2fr 1fr ;
     margin-bottom: 4%;
-    padding-left: 17%;
-    padding-right: 17%;
+    padding-left: 8%;
+    padding-right: 8%;
     padding-top: 3%;
-    grid-gap: 0%;
+    grid-gap: 3%;
     justify-items: center;
 }
 
@@ -387,7 +412,7 @@ ul li {
     
 }
 
-/* UDTALELSER MEDIA QUERIES */
+/* AUTHOR MEDIA QUERIES */
 
 @media only screen and (max-width: 800px) {
     #grid-udtalelser {
@@ -472,6 +497,8 @@ h5 {
 
 .social {
     padding-right: 10px;
+    width: 36px;
+    height: 36px;
 }
 
 .grid-item p {
