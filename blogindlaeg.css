@@ -379,7 +379,7 @@ ul li {
 
 /* KNAP START */
 
-#knap-blog {
+.knap-blog {
   width: 100%;
   padding: 1%;
   font-size: 1.1em;
@@ -387,12 +387,12 @@ ul li {
   text-align: center;
   background: #1a9fd6;
 }
-#knap-blog:hover {
+.knap-blog:hover {
   background-color: #0788be;
 }
 
 @media only screen and (max-width: 800px) {
-  #knap-blog {
+  .knap-blog {
     padding: 2%;
   }
 }
